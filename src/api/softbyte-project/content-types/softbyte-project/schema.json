@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "softbyte_projects",
+  "info": {
+    "singularName": "softbyte-project",
+    "pluralName": "softbyte-projects",
+    "displayName": "Softbyte Project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 32
+    },
+    "CoverImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "LargeDescription": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 420
+    },
+    "Link": {
+      "type": "string"
+    },
+    "SmallDescription": {
+      "type": "text",
+      "required": true,
+      "maxLength": 220,
+      "minLength": 100
+    },
+    "Position": {
+      "type": "enumeration",
+      "enum": [
+        "Right",
+        "Left"
+      ],
+      "required": true
+    },
+    "HighlightedTitle": {
+      "type": "string",
+      "maxLength": 6
+    },
+    "Image1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Image2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

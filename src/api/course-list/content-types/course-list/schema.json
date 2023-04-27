@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_lists",
+  "info": {
+    "singularName": "course-list",
+    "pluralName": "course-lists",
+    "displayName": "Course List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35,
+      "minLength": 10
+    },
+    "Enrollments": {
+      "type": "string",
+      "required": true,
+      "maxLength": 10
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Location": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}
